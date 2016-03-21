@@ -16,6 +16,6 @@ Now you can visit [`localhost:5000`](http://localhost:5000) from your browser.
   * Guides: http://phoenixframework.org/docs/overview
   * Docs: http://hexdocs.pm/phoenix
   * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+  * 
 =======
 # chat_server
