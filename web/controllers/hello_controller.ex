@@ -1,4 +1,4 @@
-defmodule HelloPhoenix.HelloController do
+defmodule ChatServer.HelloController do
   use ChatServer.Web, :controller
 
   def index(conn, _params) do

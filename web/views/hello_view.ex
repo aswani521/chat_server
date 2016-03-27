@@ -1,3 +1,3 @@
-defmodule HelloPhoenix.HelloView do
+defmodule ChatServer.HelloView do
   use ChatServer.Web, :view
 end
