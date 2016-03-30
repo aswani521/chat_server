@@ -16,6 +16,7 @@ Now you can visit [`localhost:5000`](http://localhost:5000) from your browser.
   * Guides: http://phoenixframework.org/docs/overview
   * Docs: http://hexdocs.pm/phoenix
   * Mailing list: http://groups.google.com/group/phoenix-talk
+  * chat server in 15 mins [`http://blog.distortedthinking.agency/articles/phoenix-framework-building-a-chat-server-in-15-minutes/`]
 
 =======
 # chat_server
