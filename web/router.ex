@@ -23,6 +23,8 @@ defmodule ChatServer.Router do
     get "/chats", ChatController, :index
   end
 
+  resources "/users", UserController
+
   # Other scopes may use custom stacks.
   # scope "/api", ChatServer do
   #   pipe_through :api
