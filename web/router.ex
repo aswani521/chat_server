@@ -21,9 +21,9 @@ defmodule ChatServer.Router do
     get "/hello/:messenger", HelloController, :show
 
     get "/chats", ChatController, :index
+    resources "/users", UserController
   end
 
-  resources "/users", UserController
 
   # Other scopes may use custom stacks.
   # scope "/api", ChatServer do
