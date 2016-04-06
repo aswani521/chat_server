@@ -1,0 +1,28 @@
+<h2>Show chatcontent</h2>
+
+<ul>
+
+  <li>
+    <strong>Body:</strong>
+    <%= @chatcontent.body %>
+  </li>
+
+  <li>
+    <strong>From:</strong>
+    <%= @chatcontent.from %>
+  </li>
+
+  <li>
+    <strong>To:</strong>
+    <%= @chatcontent.to %>
+  </li>
+
+  <li>
+    <strong>Chatroom:</strong>
+    <%= @chatcontent.chatroom %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: chatcontent_path(@conn, :edit, @chatcontent) %>
+<%= link "Back", to: chatcontent_path(@conn, :index) %>

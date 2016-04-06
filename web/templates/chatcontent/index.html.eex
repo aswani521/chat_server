@@ -1,0 +1,32 @@
+<h2>Listing chatcontents</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Body</th>
+      <th>From</th>
+      <th>To</th>
+      <th>Chatroom</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for chatcontent <- @chatcontents do %>
+    <tr>
+      <td><%= chatcontent.body %></td>
+      <td><%= chatcontent.from %></td>
+      <td><%= chatcontent.to %></td>
+      <td><%= chatcontent.chatroom %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: chatcontent_path(@conn, :show, chatcontent), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: chatcontent_path(@conn, :edit, chatcontent), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: chatcontent_path(@conn, :delete, chatcontent), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New chatcontent", to: chatcontent_path(@conn, :new) %>

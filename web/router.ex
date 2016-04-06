@@ -22,6 +22,7 @@ defmodule ChatServer.Router do
 
     get "/chats", ChatController, :index
     resources "/users", UserController
+    resources "/chatcontents", ChatcontentController
   end
 
 
